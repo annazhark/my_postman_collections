@@ -1,0 +1,111 @@
+{
+	"id": "8e9fe5e5-8c35-46ca-b055-8e8e0f2bd6c9",
+	"name": "LIIS Test Sign In",
+	"timestamp": "2023-01-05T15:34:00.649Z",
+	"collection_id": "20508417-67eb1c94-87ab-480e-8e32-14ab4c9520bd",
+	"folder_id": 0,
+	"environment_id": "20508417-ee50e127-5fa8-4e74-a14d-9ffb0b7f12d8",
+	"totalPass": 2,
+	"totalFail": 1,
+	"results": [
+		{
+			"id": "ad577793-78a1-45a7-91e0-b5ab82a3bf4e",
+			"name": "Check Sign-in v.1",
+			"url": "https://hr.recruit.liis.su/qa0/v1/api/annazhark93@gmail.com/sign-in",
+			"time": 1689,
+			"responseCode": {
+				"code": 201,
+				"name": "CREATED"
+			},
+			"tests": {
+				"Successful POST request": true
+			},
+			"testPassFailCounts": {
+				"Successful POST request": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				1689
+			],
+			"allTests": [
+				{
+					"Successful POST request": true
+				}
+			]
+		},
+		{
+			"id": "e58e6bdc-2f30-41ac-a1c2-f678e7ff7058",
+			"name": "Check Sign-in v.2",
+			"url": "https://hr.recruit.liis.su/qa0/v2/api/annazhark93@gmail.com/sign-in",
+			"time": 402,
+			"responseCode": {
+				"code": 201,
+				"name": "CREATED"
+			},
+			"tests": {
+				"Successful POST request": true
+			},
+			"testPassFailCounts": {
+				"Successful POST request": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				402
+			],
+			"allTests": [
+				{
+					"Successful POST request": true
+				}
+			]
+		},
+		{
+			"id": "f39f0b0c-63c5-4aa6-850e-18eede33fdb2",
+			"name": "Check admin role v.2",
+			"url": "https://hr.recruit.liis.su/qa0/v2/api/annazhark93@gmail.com/make_admin",
+			"time": 386,
+			"responseCode": {
+				"code": 403,
+				"name": "FORBIDDEN"
+			},
+			"tests": {
+				"Status code is 200": false
+			},
+			"testPassFailCounts": {
+				"Status code is 200": {
+					"pass": 0,
+					"fail": 1
+				}
+			},
+			"times": [
+				386
+			],
+			"allTests": [
+				{
+					"Status code is 200": false
+				}
+			]
+		}
+	],
+	"count": 1,
+	"totalTime": 2477,
+	"collection": {
+		"requests": [
+			{
+				"id": "ad577793-78a1-45a7-91e0-b5ab82a3bf4e",
+				"method": "POST"
+			},
+			{
+				"id": "e58e6bdc-2f30-41ac-a1c2-f678e7ff7058",
+				"method": "POST"
+			},
+			{
+				"id": "f39f0b0c-63c5-4aa6-850e-18eede33fdb2",
+				"method": "PUT"
+			}
+		]
+	}
+}

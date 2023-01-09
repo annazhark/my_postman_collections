@@ -1,0 +1,346 @@
+{
+	"id": "ab9e9f7a-ce2f-492a-a17d-d439bdeaa172",
+	"name": "LIIS Test v.1",
+	"timestamp": "2023-01-05T15:35:28.032Z",
+	"collection_id": "20508417-879c506d-bd2a-4d41-a78a-e8b7993de78d",
+	"folder_id": 0,
+	"environment_id": "20508417-ee50e127-5fa8-4e74-a14d-9ffb0b7f12d8",
+	"totalPass": 7,
+	"totalFail": 6,
+	"results": [
+		{
+			"id": "b05f27f8-41c5-4d02-aa8a-d0319d4ae544",
+			"name": "Get comments list",
+			"url": "https://hr.recruit.liis.su/qa0/v1/api/annazhark93@gmail.com/comments",
+			"time": 284,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"Status code is 200": true
+			},
+			"testPassFailCounts": {
+				"Status code is 200": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				284
+			],
+			"allTests": [
+				{
+					"Status code is 200": true
+				}
+			]
+		},
+		{
+			"id": "59b3b8fb-1274-4cab-8b4c-28731936869b",
+			"name": "Create comment",
+			"url": "https://hr.recruit.liis.su/qa0/v1/api/annazhark93@gmail.com/comments",
+			"time": 411,
+			"responseCode": {
+				"code": 404,
+				"name": "NOT FOUND"
+			},
+			"tests": {
+				"Successful POST request": false
+			},
+			"testPassFailCounts": {
+				"Successful POST request": {
+					"pass": 0,
+					"fail": 1
+				}
+			},
+			"times": [
+				411
+			],
+			"allTests": [
+				{
+					"Successful POST request": false
+				}
+			]
+		},
+		{
+			"id": "b99d4136-9fa0-4135-bcb6-1d4bb874a663",
+			"name": "Check comment create",
+			"url": "https://hr.recruit.liis.su/qa0/v1/api/annazhark93@gmail.com/comment/7",
+			"time": 113,
+			"responseCode": {
+				"code": 404,
+				"name": "NOT FOUND"
+			},
+			"tests": {
+				"Status code is 200": false
+			},
+			"testPassFailCounts": {
+				"Status code is 200": {
+					"pass": 0,
+					"fail": 1
+				}
+			},
+			"times": [
+				113
+			],
+			"allTests": [
+				{
+					"Status code is 200": false
+				}
+			]
+		},
+		{
+			"id": "7add320f-5bed-472b-b010-d527df6112be",
+			"name": "Update comment",
+			"url": "https://hr.recruit.liis.su/qa0/v1/api/annazhark93@gmail.com/comment/null",
+			"time": 122,
+			"responseCode": {
+				"code": 404,
+				"name": "NOT FOUND"
+			},
+			"tests": {
+				"Status code is 200": false,
+				"Body matches string": false
+			},
+			"testPassFailCounts": {
+				"Status code is 200": {
+					"pass": 0,
+					"fail": 1
+				},
+				"Body matches string": {
+					"pass": 0,
+					"fail": 1
+				}
+			},
+			"times": [
+				122
+			],
+			"allTests": [
+				{
+					"Status code is 200": false,
+					"Body matches string": false
+				}
+			]
+		},
+		{
+			"id": "57db791e-08ac-4a9d-94ca-412b636eb88a",
+			"name": "Delete comment",
+			"url": "https://hr.recruit.liis.su/qa0/v1/api/annazhark93@gmail.com/comment/null",
+			"time": 85,
+			"responseCode": {
+				"code": 404,
+				"name": "NOT FOUND"
+			},
+			"tests": {
+				"Status code is 204": false,
+				"Status code name has string": false
+			},
+			"testPassFailCounts": {
+				"Status code is 204": {
+					"pass": 0,
+					"fail": 1
+				},
+				"Status code name has string": {
+					"pass": 0,
+					"fail": 1
+				}
+			},
+			"times": [
+				85
+			],
+			"allTests": [
+				{
+					"Status code is 204": false,
+					"Status code name has string": false
+				}
+			]
+		},
+		{
+			"id": "2eac67f7-88be-4cff-8fe9-18b74bf73b98",
+			"name": "Get posts list",
+			"url": "https://hr.recruit.liis.su/qa0/v1/api/annazhark93@gmail.com/posts",
+			"time": 89,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"Status code is 200": true
+			},
+			"testPassFailCounts": {
+				"Status code is 200": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				89
+			],
+			"allTests": [
+				{
+					"Status code is 200": true
+				}
+			]
+		},
+		{
+			"id": "a3471418-e299-44b5-aad2-2cd3df6169bf",
+			"name": "Create post",
+			"url": "https://hr.recruit.liis.su/qa0/v1/api/annazhark93@gmail.com/posts",
+			"time": 402,
+			"responseCode": {
+				"code": 201,
+				"name": "CREATED"
+			},
+			"tests": {
+				"Successful POST request": true
+			},
+			"testPassFailCounts": {
+				"Successful POST request": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				402
+			],
+			"allTests": [
+				{
+					"Successful POST request": true
+				}
+			]
+		},
+		{
+			"id": "11ff271e-16e9-43e8-a40c-2d4de0faf6f8",
+			"name": "Check post create",
+			"url": "https://hr.recruit.liis.su/qa0/v1/api/annazhark93@gmail.com/post/3716",
+			"time": 129,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"Status code is 200": true
+			},
+			"testPassFailCounts": {
+				"Status code is 200": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				129
+			],
+			"allTests": [
+				{
+					"Status code is 200": true
+				}
+			]
+		},
+		{
+			"id": "b6536feb-26e1-4a91-8780-9c4db45cd811",
+			"name": "Check post update",
+			"url": "https://hr.recruit.liis.su/qa0/v1/api/annazhark93@gmail.com/post/3716",
+			"time": 403,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"Status code is 200": true,
+				"Body matches string": true
+			},
+			"testPassFailCounts": {
+				"Status code is 200": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Body matches string": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				403
+			],
+			"allTests": [
+				{
+					"Status code is 200": true,
+					"Body matches string": true
+				}
+			]
+		},
+		{
+			"id": "e6733747-3b23-47d6-81f2-462156b2fd25",
+			"name": "Check post delete",
+			"url": "https://hr.recruit.liis.su/qa0/v1/api/annazhark93@gmail.com/post/3716",
+			"time": 379,
+			"responseCode": {
+				"code": 204,
+				"name": "NO CONTENT"
+			},
+			"tests": {
+				"Status code is 204": true
+			},
+			"testPassFailCounts": {
+				"Status code is 204": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				379
+			],
+			"allTests": [
+				{
+					"Status code is 204": true
+				}
+			]
+		}
+	],
+	"count": 1,
+	"totalTime": 2417,
+	"collection": {
+		"requests": [
+			{
+				"id": "b05f27f8-41c5-4d02-aa8a-d0319d4ae544",
+				"method": "GET"
+			},
+			{
+				"id": "59b3b8fb-1274-4cab-8b4c-28731936869b",
+				"method": "POST"
+			},
+			{
+				"id": "b99d4136-9fa0-4135-bcb6-1d4bb874a663",
+				"method": "GET"
+			},
+			{
+				"id": "7add320f-5bed-472b-b010-d527df6112be",
+				"method": "PUT"
+			},
+			{
+				"id": "57db791e-08ac-4a9d-94ca-412b636eb88a",
+				"method": "DELETE"
+			},
+			{
+				"id": "2eac67f7-88be-4cff-8fe9-18b74bf73b98",
+				"method": "GET"
+			},
+			{
+				"id": "a3471418-e299-44b5-aad2-2cd3df6169bf",
+				"method": "POST"
+			},
+			{
+				"id": "11ff271e-16e9-43e8-a40c-2d4de0faf6f8",
+				"method": "GET"
+			},
+			{
+				"id": "b6536feb-26e1-4a91-8780-9c4db45cd811",
+				"method": "PUT"
+			},
+			{
+				"id": "e6733747-3b23-47d6-81f2-462156b2fd25",
+				"method": "DELETE"
+			}
+		]
+	}
+}

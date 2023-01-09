@@ -1,0 +1,402 @@
+{
+	"id": "8acd8a5c-0e7b-4a54-812e-6c27b6464c9a",
+	"name": "LIIS Test v.2",
+	"timestamp": "2023-01-05T15:36:11.070Z",
+	"collection_id": "20508417-1648f1e9-e808-4963-998d-8be806d7585b",
+	"folder_id": 0,
+	"environment_id": "20508417-ee50e127-5fa8-4e74-a14d-9ffb0b7f12d8",
+	"totalPass": 14,
+	"totalFail": 0,
+	"results": [
+		{
+			"id": "6673748e-f124-4e0d-888b-6aa73de18f61",
+			"name": "Create comment",
+			"url": "https://hr.recruit.liis.su/qa0/v2/api/annazhark93@gmail.com/comments%0A",
+			"time": 413,
+			"responseCode": {
+				"code": 201,
+				"name": "CREATED"
+			},
+			"tests": {
+				"Successful POST request": true
+			},
+			"testPassFailCounts": {
+				"Successful POST request": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				413
+			],
+			"allTests": [
+				{
+					"Successful POST request": true
+				}
+			]
+		},
+		{
+			"id": "e4292825-9db9-4bd2-9f20-107513f7ed55",
+			"name": "Check comments",
+			"url": "https://hr.recruit.liis.su/qa0/v2/api/annazhark93@gmail.com/comments%0A",
+			"time": 113,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"Status code is 200": true
+			},
+			"testPassFailCounts": {
+				"Status code is 200": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				113
+			],
+			"allTests": [
+				{
+					"Status code is 200": true
+				}
+			]
+		},
+		{
+			"id": "d6b665c3-28c3-4b56-9438-c510564159fe",
+			"name": "Check get comment",
+			"url": "https://hr.recruit.liis.su/qa0/v2/api/annazhark93@gmail.com/comment/774",
+			"time": 115,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"Status code is 200": true
+			},
+			"testPassFailCounts": {
+				"Status code is 200": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				115
+			],
+			"allTests": [
+				{
+					"Status code is 200": true
+				}
+			]
+		},
+		{
+			"id": "40b0f975-b046-4642-8a43-c64a7a62aa7b",
+			"name": "Update comment",
+			"url": "https://hr.recruit.liis.su/qa0/v2/api/annazhark93@gmail.com/comment/774",
+			"time": 425,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"Status code is 200": true
+			},
+			"testPassFailCounts": {
+				"Status code is 200": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				425
+			],
+			"allTests": [
+				{
+					"Status code is 200": true
+				}
+			]
+		},
+		{
+			"id": "5d11fc9e-f24a-4f47-88fd-45115371e3bd",
+			"name": "Get pagination",
+			"url": "https://hr.recruit.liis.su/qa0/v2/api/annazhark93@gmail.com/comments?page=1",
+			"time": 102,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"Status code is 200": true
+			},
+			"testPassFailCounts": {
+				"Status code is 200": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				102
+			],
+			"allTests": [
+				{
+					"Status code is 200": true
+				}
+			]
+		},
+		{
+			"id": "19e3b2fc-312e-4255-a250-5c728af752b5",
+			"name": "Delete comment",
+			"url": "https://hr.recruit.liis.su/qa0/v2/api/annazhark93@gmail.com/comment/774",
+			"time": 396,
+			"responseCode": {
+				"code": 204,
+				"name": "NO CONTENT"
+			},
+			"tests": {
+				"Status code is 204": true
+			},
+			"testPassFailCounts": {
+				"Status code is 204": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				396
+			],
+			"allTests": [
+				{
+					"Status code is 204": true
+				}
+			]
+		},
+		{
+			"id": "f2f4ae4c-9651-49ea-aa72-50040e75d398",
+			"name": "Pagination",
+			"url": "https://hr.recruit.liis.su/qa0/v2/api/annazhark93@gmail.com/posts?page=1",
+			"time": 155,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"Status code is 200": true
+			},
+			"testPassFailCounts": {
+				"Status code is 200": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				155
+			],
+			"allTests": [
+				{
+					"Status code is 200": true
+				}
+			]
+		},
+		{
+			"id": "af6a105a-0ec3-4830-8e58-1185e217f391",
+			"name": "Get posts list",
+			"url": "https://hr.recruit.liis.su/qa0/v2/api/annazhark93@gmail.com/posts",
+			"time": 104,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"Status code is 200": true
+			},
+			"testPassFailCounts": {
+				"Status code is 200": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				104
+			],
+			"allTests": [
+				{
+					"Status code is 200": true
+				}
+			]
+		},
+		{
+			"id": "7344cd75-7474-4ce9-acbc-87e9f168876b",
+			"name": "Create post",
+			"url": "https://hr.recruit.liis.su/qa0/v2/api/annazhark93@gmail.com/posts",
+			"time": 420,
+			"responseCode": {
+				"code": 201,
+				"name": "CREATED"
+			},
+			"tests": {
+				"Successful POST request": true,
+				"Status code name has string": true
+			},
+			"testPassFailCounts": {
+				"Successful POST request": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Status code name has string": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				420
+			],
+			"allTests": [
+				{
+					"Successful POST request": true,
+					"Status code name has string": true
+				}
+			]
+		},
+		{
+			"id": "1dfede58-dfcf-456f-9002-346c0ad2f862",
+			"name": "Get post",
+			"url": "https://hr.recruit.liis.su/qa0/v2/api/annazhark93@gmail.com/post/1895",
+			"time": 112,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"Status code is 200": true
+			},
+			"testPassFailCounts": {
+				"Status code is 200": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				112
+			],
+			"allTests": [
+				{
+					"Status code is 200": true
+				}
+			]
+		},
+		{
+			"id": "37bc0321-0420-44e5-840d-46e4080349a4",
+			"name": "Update post",
+			"url": "https://hr.recruit.liis.su/qa0/v2/api/annazhark93@gmail.com/post/1895",
+			"time": 425,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"Status code is 200": true,
+				"Body matches string": true
+			},
+			"testPassFailCounts": {
+				"Status code is 200": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Body matches string": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				425
+			],
+			"allTests": [
+				{
+					"Status code is 200": true,
+					"Body matches string": true
+				}
+			]
+		},
+		{
+			"id": "a8258711-b4b7-4e4a-8023-cef9b63b5119",
+			"name": "Delete post",
+			"url": "https://hr.recruit.liis.su/qa0/v2/api/annazhark93@gmail.com/post/1895",
+			"time": 474,
+			"responseCode": {
+				"code": 204,
+				"name": "NO CONTENT"
+			},
+			"tests": {
+				"Status code is 204": true
+			},
+			"testPassFailCounts": {
+				"Status code is 204": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				474
+			],
+			"allTests": [
+				{
+					"Status code is 204": true
+				}
+			]
+		}
+	],
+	"count": 1,
+	"totalTime": 3254,
+	"collection": {
+		"requests": [
+			{
+				"id": "6673748e-f124-4e0d-888b-6aa73de18f61",
+				"method": "POST"
+			},
+			{
+				"id": "e4292825-9db9-4bd2-9f20-107513f7ed55",
+				"method": "GET"
+			},
+			{
+				"id": "d6b665c3-28c3-4b56-9438-c510564159fe",
+				"method": "GET"
+			},
+			{
+				"id": "40b0f975-b046-4642-8a43-c64a7a62aa7b",
+				"method": "PUT"
+			},
+			{
+				"id": "5d11fc9e-f24a-4f47-88fd-45115371e3bd",
+				"method": "GET"
+			},
+			{
+				"id": "19e3b2fc-312e-4255-a250-5c728af752b5",
+				"method": "DELETE"
+			},
+			{
+				"id": "f2f4ae4c-9651-49ea-aa72-50040e75d398",
+				"method": "GET"
+			},
+			{
+				"id": "af6a105a-0ec3-4830-8e58-1185e217f391",
+				"method": "GET"
+			},
+			{
+				"id": "7344cd75-7474-4ce9-acbc-87e9f168876b",
+				"method": "POST"
+			},
+			{
+				"id": "1dfede58-dfcf-456f-9002-346c0ad2f862",
+				"method": "GET"
+			},
+			{
+				"id": "37bc0321-0420-44e5-840d-46e4080349a4",
+				"method": "PUT"
+			},
+			{
+				"id": "a8258711-b4b7-4e4a-8023-cef9b63b5119",
+				"method": "DELETE"
+			}
+		]
+	}
+}
